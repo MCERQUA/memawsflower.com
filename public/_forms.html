@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Netlify Form Stubs</title></head>
+<body>
+  <!-- Static stub so Netlify detects the contact form at deploy time (the real
+       form is a client component Netlify's scanner can't see). Field names MUST
+       match the live form + its /_forms.html POST body. -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input name="bot-field" />
+    <input name="form-name" />
+    <input name="name" />
+    <input name="email" />
+    <textarea name="message"></textarea>
+  </form>
+</body>
+</html>

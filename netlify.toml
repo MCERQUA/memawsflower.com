@@ -1,0 +1,11 @@
+# MEMAW's Flowers — Netlify config (static export)
+[build]
+  command = "pnpm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Static export = no @netlify/plugin-nextjs (that's for SSR). Netlify serves the
+# out/ directory directly and detects Netlify Forms from the static HTML
+# (public/_forms.html stub + the client form that POSTs to /_forms.html).
